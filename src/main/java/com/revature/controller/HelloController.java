@@ -13,5 +13,11 @@ public class HelloController {
 	public String displayMessage() {
 		return "Hello from my Spring Boot App!";
 	}
+	
+	@GetMapping(value="/goodbye", produces=MediaType.TEXT_PLAIN_VALUE)
+	@ResponseBody
+	public String displayAnotherMessage() {
+		return "Another endpoint says goodbye";
+	}
 
 }
