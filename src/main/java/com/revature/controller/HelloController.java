@@ -17,7 +17,7 @@ public class HelloController {
 	@GetMapping(value="/goodbye", produces=MediaType.TEXT_PLAIN_VALUE)
 	@ResponseBody
 	public String displayAnotherMessage() {
-		return "updated endpoint";
+		return "updated endpoint!";
 	}
 
 }
